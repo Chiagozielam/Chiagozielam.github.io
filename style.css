@@ -1,0 +1,62 @@
+@font-face{
+    font-family: Material Icons ;
+    src: url(MaterialIcons-Regular.ttf);
+}
+
+
+#nav{
+    position: sticky ;
+    top: 0 ;
+    z-index: 1;
+}
+#straight-form{
+    position: absolute ;
+}
+
+#first-my-img-box{
+    width: 100% ;
+    height: 250px ;
+    overflow: hidden ;
+    
+}
+#first-my-img{
+    filter: brightness(110%) ;
+    transition: all 0.4s ;
+}
+#first-my-img:hover{
+    width: 130% ;
+    height: 130% ;
+}
+#border-bottom{
+    border-bottom: 8px solid rgb(221, 31, 66) ;
+}
+#blog-text{
+    color: rgb(97, 95, 95) ;
+    font-weight: lighter !important ;
+    background-color: rgb(247, 125, 18) ;
+}
+
+/*-------THIS STYLING IS FOR BLOG.HTML-----------------*/
+
+#blog-bdrop{
+    width: 100% ;
+    height: 250px ;
+}
+#blog-text-blog{
+    margin-top: -10% ;
+    height: 150px ;
+}
+#blog-text-blog P{
+    font-size: 18px ;
+}
+#loader{
+    margin-top: 4% ;
+}
+
+     
+
+
+
+
+
+
