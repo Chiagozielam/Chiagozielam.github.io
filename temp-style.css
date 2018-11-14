@@ -400,6 +400,11 @@ h5{
     position: relative;
     overflow: hidden;
     height: 350px;
+    margin-bottom: 3%;
+   
+}
+.projects{
+    width: 100%;
 }
 .img-cover{
     background-color: rgba(7, 73, 29, 0.8);
@@ -412,6 +417,16 @@ h5{
 .project-indiv-container:hover .img-cover{
     animation: slideUp .3s linear forwards;
     
+}
+.view-on-github-center{
+    text-align: center;
+    border: 2px solid white;
+    padding: 5%;
+    width: 50%;
+    margin: 20% auto;
+}
+.view-on-github-center a:hover{
+    color: rgb(6, 6, 110);
 }
 
 @keyframes slideUp{
