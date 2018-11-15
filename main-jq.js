@@ -41,7 +41,7 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-    $( "a#nav-mail" ).click(function( event ) {
+    $( "a#nav-social-media" ).click(function( event ) {
         event.preventDefault();
         $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
     });
@@ -64,3 +64,11 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
     });
 });
+
+
+
+$(function(){
+    $('#submit-btn').click(function(){
+        alert('This feature is currently down,please try contacting me through social media or call: 08136938836') ;
+    }) ;
+}) ;
