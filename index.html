@@ -8,17 +8,17 @@
     <link rel="shortcut icon" href="https://favicon-generator.org/favicon-generator/htdocs/favicons/2015-01-20/6735546b1fe276dbdab117426b2c55fb.ico" type="image/x-icon">
     <link rel="stylesheet" href="temp-style.css">
     <link rel="stylesheet" href="materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="fontawesome.css">
     <link rel="stylesheet" href="style2.css">    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
 </head>
 <body>
         
     <div class="navbar-fixed">
-        <nav class="white">
+        <nav class="" id="top-nav">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo align-left" id="logo-container">
-                    <i class="material-icons blue-text darken-3">filter_list</i><span id="nav-name-text" class="black-text">Daniel Don</span>
+                    <i class="material-icons blue-text darken-3">filter_list</i><span id="nav-name-text" class="">Daniel Don</span>
                 </a>
                 <ul class=""id="shift">
                     <li><a href="#blog-excerpts" id="nav-blog" title="BLOG EXCERPTS"><i class="material-icons green-text">content_paste</i></a></li>
@@ -316,7 +316,22 @@
     
     </div>
     
+    <script>
+        function Scroll(){
+    var nav = document.getElementById('top-nav');
+    var nameInNav = document.getElementById('nav-name-text')
+    var fset = window.pageYOffset;
+    if (fset > 200) {
+        nav.style.backgroundColor = "white";
+        nameInNav.style.color = "black";
 
+    }else{
+        nav.style.backgroundColor = "black";
+        nameInNav.style.color = "white";
+    }
+}
+ window.addEventListener("scroll",Scroll);
+    </script>
 
 
         
