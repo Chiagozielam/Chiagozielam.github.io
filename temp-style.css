@@ -171,13 +171,28 @@ body{
     }
 }
 
+.push-down{
+    margin-top: 10%;
+    background-color: rgb(248, 248, 248);
+}
+
 .container {
     padding: 0 0.5rem;
     width: 85% !important;
   }
 
 #details-headers-box{
-    height: auto ;
+    height: 450px ;
+    width: 230px;
+}
+.all-details{
+    margin-top: 5%;
+    width: 750px;
+    height: 160px;
+}
+.all-details p, .all-details blockquote{
+    font-size: 18px!important;
+    color: gray!important;
 }
 
 .details-header-content ul li a{
@@ -201,6 +216,15 @@ body{
 }
 .developer-img{
     height: 250px !important;
+}
+.tab-card{
+    height: 300px!important;
+}
+
+.nav-name-text-box{
+    border-right: 3px solid rgb(245, 233, 211);
+    width: 145px;    
+    height: 55px;
 }
 
 #nav-name-text{
@@ -295,10 +319,36 @@ h5{
     background-color: rgba(169, 252, 36, 0.8)!important;
     z-index: 1;
 }
+#top-nav-on-mobile{
+    height: 60px;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: all .5s;
+    box-shadow: 2px 3px  15px rgba(0, 0, 0, 0.2);
+}
+#hamburger-mobile{
+    color: blue!important;
+}
+#my-name-text-in-mobile{
+    background-color: rgba(17, 182, 17, 0.2);
+    padding-bottom: 10px;
+    border-radius: 50px;
+    padding-top: 10px;
+    color: white;
+}
+.hire-in-mobile{
+    width: 90px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 #brief-me-fsize{
-    font-size: 20px;
+    margin-top: 20%;
+    font-size: 17px;
     line-height: 200%;
-    font-weight: bold;
+    font-weight: ;
 }
 .projects{
     height: 350px!important;
@@ -322,9 +372,21 @@ h5{
     border-bottom: 8px solid rgb(221, 31, 66) ;
 }
 #blog-text{
+    margin-top: 50px;
+    margin-bottom: 50px;    
     color: rgb(97, 95, 95) ;
     font-weight: lighter !important ;
-    background-color: rgb(247, 125, 18) ;
+}
+.blog-margin{
+    margin-left: 3%!important;
+    margin-right: 3%!important; 
+}
+.blog-text{
+    font-size: 17px;
+    transition: all .1s;
+}
+.blog-text:hover{
+    font-size: 18px;
 }
 
 #first-my-img{
@@ -339,9 +401,11 @@ h5{
     border-bottom: 8px solid rgb(221, 31, 66) ;
 }
 #about-me-mobile{
-    margin-left: 2%;
-    margin-right: 2%;
-    font-size: 18px;
+    margin-left: 6%;
+    margin-right: 6%;
+    text-align: justify;
+    color: rgb(119, 116, 116);
+    font-size: 16px;
 }
 
 #form{
@@ -376,7 +440,7 @@ h5{
     font-size: 25px;
 }
 
-    /* FOOTER SOCIAL MEDIA ICONS EFFECTS */
+    FOOTER SOCIAL MEDIA ICONS EFFECTS
 #facebook-icon-footer{
     transition: all .3s!important;
 }
