@@ -13,6 +13,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
 </head>
 <body>
+    <div id="loader-wrapper" class="btn gradient-45deg-indigo-purple hire-in-mobile">
+        <div class="center loader-gif" id="loader">
+        </div>
+    </div>
         
     <div class="navbar-fixed hide-on-small-and-down">
         <nav class="" id="top-nav">
@@ -83,11 +87,16 @@
         <div class="parallax-container">
                 <div class="row" id="buttons-in-parallax">
                     <div class="col s10 m3 l3 offset-l3">
-                        <div class="center paralax-btn-main card"><p class="white">gafdhgsfahgdf</p></div>
+                        <div class="center paralax-btn-main card gradient-45deg-green-teal"><p class="white"><a href="#">Get Started</a></p></div>
                     </div>
                     <div class="col s10 m3 l3 ">
-                        <div class="center paralax-btn-main card"><p class="white">gafdhgsfahgdf</p></div>
+                        <div class="center paralax-btn-main card"><p class="white"><a href="#">Request A Website</a></p></div>
                     </div>
+                
+                </div>
+                <div class="center orange-text" id="info-in-parallax">
+                    <p>Dandons25@gmail.com</p>
+                    <p>+2348136938836</p>
                 </div>
                 
             <div class="parallax">
@@ -105,7 +114,7 @@
                 <img src="images/Daniel299.jpg" class="responsive-img" alt="">
             </div>
             <div class="col s8 m4 l3">
-                <ul id="brief-me-fsize" class="grey-text darken-4">
+                <ul id="brief-me-fsize" class="">
                     <li>Entrepreneur</li>
                     <div class="divider thick-border"></div>
                     <li>Front End Developer</li>
@@ -388,6 +397,12 @@
     }
 }
  window.addEventListener("scroll",Scroll);
+    </script>
+    <script>
+        window.addEventListener("load", function(){
+            var loader = document.getElementById('loader-wrapper');
+            document.body.removeChild(loader);
+        });
     </script>
 
 
