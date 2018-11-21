@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Daniel Test</title>
-    <link rel="shortcut icon" href="fontawesome.css">
+    <link rel="shortcut icon" href="https://favicon-generator.org/favicon-generator/htdocs/favicons/2015-01-20/6735546b1fe276dbdab117426b2c55fb.ico" type="image/x-icon">
     <link rel="stylesheet" href="temp-style.css">
     <link rel="stylesheet" href="materialize.min.css">
+    <link rel="stylesheet" href="fontawesome.css">
     <link rel="stylesheet" href="style2.css">    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
 </head>
@@ -15,7 +16,7 @@
         
     <div class="navbar-fixed hide-on-small-and-down">
         <nav class="" id="top-nav">
-            <div class="nav-wrapper ">
+            <div class="nav-wrapper">
                 <a href="#" class="brand-logo align-left nav-name-text-box" id="logo-container">
                     <i class="material-icons blue-text darken-3">filter_list</i><span id="nav-name-text" class="">Daniel Don </span>
                 </a>
@@ -80,11 +81,17 @@
 
     <div>
         <div class="parallax-container">
-           
+                <div class="row" id="buttons-in-parallax">
+                    <div class="col s10 m3 l3 offset-l3">
+                        <div class="center paralax-btn-main card"><p class="white">gafdhgsfahgdf</p></div>
+                    </div>
+                    <div class="col s10 m3 l3 ">
+                        <div class="center paralax-btn-main card"><p class="white">gafdhgsfahgdf</p></div>
+                    </div>
+                </div>
+                
             <div class="parallax">
-               <div id="color-opacity">
-                <img src="images/operator.png" alt="" class="">
-               </div>
+                <img src="images/business.jpg" alt="" class="">
             </div>
         </div>
 
@@ -99,16 +106,14 @@
             </div>
             <div class="col s8 m4 l3">
                 <ul id="brief-me-fsize" class="grey-text darken-4">
-                    <li></li>
-                    <div class="divider"></div>
                     <li>Entrepreneur</li>
-                    <div class="divider"></div>
+                    <div class="divider thick-border"></div>
                     <li>Front End Developer</li>
-                    <div class="divider"></div>
+                    <div class="divider thick-border"></div>
                     <li>Teenager</li>
-                    <div class="divider"></div>
+                    <div class="divider thick-border"></div>
                     <li>Teenager</li>
-                    <div class="divider"></div>
+                    <div class="divider thick-border"></div>
                     <li>Teenager</li>
                 </ul>
             </div>
@@ -362,7 +367,7 @@
     var navMobile = document.getElementById('top-nav-on-mobile');
     var nameInMobileNav = document.getElementById('my-name-text-in-mobile');
     var fset = window.pageYOffset;
-    if (fset > 450) {
+    if (fset > 300) {
         nav.style.backgroundColor = "white";
         nav.style.height =  "90px";
         nameInNav.style.color = "black";
@@ -392,7 +397,6 @@
     <script src="typed.js"></script>    
     <script src="main-jq.js"></script>    
     <script src="materialize.min.js"></script>
-    <script src="fontawesome.js"></script>
     <script src="init.js"></script>
 </body>
 </html>
