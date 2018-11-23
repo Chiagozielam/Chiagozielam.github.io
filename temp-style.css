@@ -371,6 +371,23 @@ h5{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.my-id{
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    transform: translateY(40px);
+}
+.id-desc{
+    transform: translateX(200px);
+    transition: all .5s ease-in-out;
+}
+.desc-move{
+    transform: translateX(20px);
+}
+.id-appear{
+    transform: translateY(0px);
+    transform: translateX(0px);
+    opacity: 1;
+}
 #brief-me-fsize{
     color: rgb(68, 67, 67);
     margin-top: 20%;
@@ -381,7 +398,7 @@ h5{
     height: 350px!important;
 }
 #buttons-in-parallax{
-    margin-top: 150px !important;
+    margin-top: 35vh !important;
 }
 /* .paralax-btn-main{
     padding: 10px 0 10px 0;

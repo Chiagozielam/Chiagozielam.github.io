@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="materialize.min.css">
     <link rel="stylesheet" href="fontawesome.css">
     <link rel="stylesheet" href="style2.css">    
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     
 </head>
 <body>
     <div id="loader-wrapper" class="btn gradient-45deg-indigo-purple hire-in-mobile">
@@ -54,7 +55,7 @@
                 <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons" id="hamburger-mobile" style="font-size:45px;margin-top:10px;" >subject</i></a>
             </div>
             <div class="col s6">
-                <h5 id="my-name-text-in-mobile" class="center">Daniel Don</h5>
+                <h5 id="my-name-text-in-mobile" class="center"><a class="" href="#">Daniel Don</a></h5>
             </div>
             <div class="col s3">
                 <p class="btn gradient-45deg-indigo-purple hire-in-mobile">Hire</p>
@@ -109,12 +110,12 @@
        
 
         <p class="job-text btn transparent blue-text">WEB DESIGNER | HAPPY MAN <i class="material-icons yellow-text">face</i></p>
-        <div class="row">
+        <div class="row my-id" id="">
             <div class="col s6 m4 l3">
                 <img src="images/Daniel299.jpg" class="responsive-img" alt="">
             </div>
             <div class="col s8 m4 l3">
-                <ul id="brief-me-fsize" class="">
+                <ul id="brief-me-fsize" class="id-desc">
                     <li>Entrepreneur</li>
                     <div class="divider thick-border"></div>
                     <li>Front End Developer</li>
@@ -402,7 +403,24 @@
         window.addEventListener("load", function(){
             var loader = document.getElementById('loader-wrapper');
             document.body.removeChild(loader);
-        });
+    });
+
+    function scrollReveal(){
+        var id = document.querySelector(".my-id");
+        var idDesc = document.querySelector(".id-desc"); 
+        var idPosition = id.getBoundingClientRect().top;
+        var screenPosition = window.innerHeight / 1.8;
+
+        if (idPosition < screenPosition) {
+            id.classList.add('id-appear');
+            idDesc.classList.add('desc-move');
+            
+        }else{
+            id.classList.remove('id-appear');
+            idDesc.classList.remove('desc-move');
+        }
+    }
+    window.addEventListener('scroll', scrollReveal);
     </script>
 
 
