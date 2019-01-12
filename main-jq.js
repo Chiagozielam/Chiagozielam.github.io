@@ -62,6 +62,7 @@ $(document).ready(function(){
     $( "a#hire-me-text" ).click(function( event ) {
         event.preventDefault();
         $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+        alert("Send me a mail. I'll respond to you shortly")
     });
 });
 
@@ -72,3 +73,10 @@ $(function(){
         alert('This feature is currently down,please try contacting me through social media or call: 08136938836') ;
     }) ;
 }) ;
+
+$(function(){
+    $('#hireMobile').click(function(){
+        alert("Send me A mail. I'll respond to you shortly");
+    });
+});
+

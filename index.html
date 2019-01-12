@@ -8,14 +8,17 @@
     <link rel="shortcut icon" href="https://favicon-generator.org/favicon-generator/htdocs/favicons/2015-01-20/6735546b1fe276dbdab117426b2c55fb.ico" type="image/x-icon">
     <link rel="stylesheet" href="temp-style.css">
     <link rel="stylesheet" href="materialize.min.css">
-    <link rel="stylesheet" href="fontawesome.css">
-    <link rel="stylesheet" href="style2.css">    
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      
 </head>
 <body>
-    <div id="loader-wrapper" class="btn gradient-45deg-indigo-purple hire-in-mobile">
-        <div class="center loader-gif" id="loader">
+    <p class="connect">
+        <i class="material-icons">account_circle</i>
+    </p>
+    <div id="loader-wrapper" class="btn grey">
+        <div class=" loader-gif" id="loader">
         </div>
     </div>
         
@@ -58,7 +61,7 @@
                 <h5 id="my-name-text-in-mobile" class="center"><a class="" href="#">Daniel Don</a></h5>
             </div>
             <div class="col s3">
-                <p class="btn gradient-45deg-indigo-purple hire-in-mobile">Hire</p>
+                <p class="btn gradient-45deg-indigo-purple hire-in-mobile" id="hireMobile">Hire</p>
             </div>
         </div>
 
@@ -86,18 +89,19 @@
 
     <div>
         <div class="parallax-container">
-                <div class="row" id="buttons-in-parallax">
-                    <div class="col s10 m3 l3 offset-l3">
-                        <div class="center paralax-btn-main card gradient-45deg-green-teal"><p class="white"><a href="#">Get Started</a></p></div>
+                <div class="black-opacity">
+                    <div class="row" id="buttons-in-parallax">
+                        <div class="col s10 m3 l3 offset-l3">
+                            <div class="center paralax-btn-main card gradient-45deg-green-teal"><p class="white"><a href="#">Get Started</a></p></div>
+                        </div>
+                        <div class="col s10 m3 l3 ">
+                            <div class="center paralax-btn-main card"><p class="white"><a href="#">Request A Website</a></p></div>
+                        </div>
+                    
                     </div>
-                    <div class="col s10 m3 l3 ">
-                        <div class="center paralax-btn-main card"><p class="white"><a href="#">Request A Website</a></p></div>
+                    <div class="center white-text" id="info-in-parallax">
+                        
                     </div>
-                
-                </div>
-                <div class="center orange-text" id="info-in-parallax">
-                    <p>Dandons25@gmail.com</p>
-                    <p>+2348136938836</p>
                 </div>
                 
             <div class="parallax">
@@ -120,9 +124,9 @@
                     <div class="divider thick-border"></div>
                     <li>Front End Developer</li>
                     <div class="divider thick-border"></div>
-                    <li>Teenager</li>
+                    <li>Content Writer</li>
                     <div class="divider thick-border"></div>
-                    <li>Teenager</li>
+                    <li>AI Enthusiast</li>
                     <div class="divider thick-border"></div>
                     <li>Teenager</li>
                 </ul>
@@ -175,10 +179,10 @@
     </div>
     <p id="next-to-social-media" class="card-panel"></p>
     <div class="container center" style="font-size:60px;" id="social-media-handles">
-        <a href="https://www.facebook.com/daniel.don.102361" target="_blank" id="facebook-icon" class="fa-facebook-square grey-text"></a>
-        <a href="" id="twitter-icon" class="fa-twitter-square grey-text"></a>
-        <a href="" id="slack-icon" class="fa-slack grey-text"></a>
-        <a href="" id="github-icon" class="fa-github-square grey-text"></a>        
+        <a href="https://www.facebook.com/daniel.don.102361" target="_blank" id="facebook-icon" ><i class="fa fa-facebook-square grey-text"></i></a>
+        <a href="" id="twitter-icon" ><i class="fa fa-twitter-square grey-text"></i></a>
+        <a href="" id="slack-icon" ><i class="fa fa-slack grey-text"></i></a>
+        <a href="" id="github-icon"><i  class="fa fa-github-square grey-text"></i></a>        
     </div>
 
     <!--THIS STARTS THE SECTION FOR EXPLANATIONS LIKE ABOuT ME AND THE REST OF THOSE STUFF-->
@@ -355,10 +359,10 @@
                     <p class="card-panel"><a href="https://www.google.com/maps/place/Elekahia+Housing+Estate,+Rumuola,+Port+Harcourt/@4.820664,7.0243151,18z/data=!4m5!3m4!1s0x1069cdcbd7c7ca5f:0x7a06de8cef74e62e!8m2!3d4.8206329!4d7.0253146" target="_blank">Find me with google maps</a>
 
                         <span class="center" id="social-media-in-footer">
-                                <a href="https://www.facebook.com/daniel.don.102361" target="_blank" id="facebook-icon-footer" class="fa-facebook grey-text"></a>
-                                <a href="" id="twitter-icon-footer" class="fa-twitter grey-text"></a>
-                                <a href="" id="slack-icon-footer" class="fa-slack grey-text"></a>
-                                <a href="" id="github-icon-footer" class="fa-github grey-text"></a>
+                                <a href="https://www.facebook.com/daniel.don.102361" target="_blank" id="facebook-icon-footer"><i class="fa fa-facebook grey-text"></i></a>
+                                <a href="" id="twitter-icon-footer"><i  class="fa fa-twitter grey-text"></i></a>
+                                <a href="" id="slack-icon-footer"><i  class="fa fa-slack grey-text"></i></a>
+                                <a href="" id="github-icon-footer"><i  class="fa fa-github grey-text"></i></a>
                         </span>
                     </p>
                     
@@ -387,11 +391,9 @@
         nameInMobileNav.style.color = "black";
 
     }else{
-        nav.style.backgroundColor = "black";
         nameInNav.style.color = "white";
         nav.style.height =  "70px";
 
-        navMobile.style.backgroundColor = "black";
         navMobile.style.height = "60px";
         nameInMobileNav.style.color = "white";
 

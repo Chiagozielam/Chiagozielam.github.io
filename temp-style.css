@@ -95,19 +95,10 @@ body{
     margin-top: 0;
 }
 #info-in-parallax{
-    font-size: 18px;
-    letter-spacing: 20px;
-    background-color: rgba(0, 0, 0, 0.2);    
-    transition: 1s;
-    animation: cluster 1s linear forwards 1.5s;
-}
-#info-in-parallax:hover{
-    background-color: rgba(0, 0, 0, 0.3)
-}
-@keyframes cluster{
-    to{
-        letter-spacing: 2px;
-    }
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 6px;
 }
 
 .head-img-box{
@@ -380,6 +371,18 @@ h5{
     transform: translateX(200px);
     transition: all .5s ease-in-out;
 }
+.connect{
+    width: 50px;
+    height: 50px;   
+    text-align: center;
+    padding-top: 15px;
+    position: fixed;
+    cursor: pointer;
+    background-color: rgb(32, 32, 141);
+    border-radius: 30px;
+    margin-top: 90vh;
+    margin-left: 90vw;
+}
 .desc-move{
     transform: translateX(20px);
 }
@@ -397,8 +400,16 @@ h5{
 .projects{
     height: 350px!important;
 }
+
+.black-opacity{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 #buttons-in-parallax{
     margin-top: 35vh !important;
+    font-size: 18px;
 }
 /* .paralax-btn-main{
     padding: 10px 0 10px 0;
